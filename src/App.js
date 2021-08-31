@@ -1,25 +1,25 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import { Route, Switch } from "react-router-dom";
 
-import Navbar from './components/Navbar'
-import Banner from './components/Banner'
-import Cards from './components/Cards'
-import Search from './components/Search'
-import Logos from './components/Logos'
-import Footer from './components/Footer'
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Products from "./components/Products";
+import Landing from "./components/Landing";
+
 
 class App extends Component {
-    render() {
-        return (
-            <div>
-                <Navbar />
-                <Banner />
-                <Cards />
-                <Search />
-                <Logos />
-                <Footer />
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div>
+        <Navbar />
+        <Switch>
+            <Route path="/products" component={Products} />
+          <Route path="/" component={Landing} />
+            </Switch>
+        <Footer />
+      </div>
+    );
+  }
 }
 
-export default App
+export default App;
