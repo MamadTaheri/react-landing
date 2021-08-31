@@ -23,11 +23,7 @@ export default class Cards extends Component {
     render() {
         const {phoneData} = this.state
         return (
-            <div className={styles.container}>
-                {/* <Card image={iphonex} name="Iphone X" cost ="500 $" />
-                <Card image={iphone11} name="Iphone 11" cost ="600 $" />
-                <Card image={iphone2} name="Iphone 12" cost ="800 $" />
-                <Card image={s21} name="S21 Ultra" cost ="790 $" /> */}
+            <div className={styles.container}> 
                 {phoneData.map(phone => <Card key={phone.id} image={phone.image} name={phone.name} cost ={phone.cost} />)}
             </div>
         )

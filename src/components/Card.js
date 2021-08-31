@@ -36,7 +36,7 @@ export default class Card extends Component {
         <p>{cost} {counter ? `* ${counter} = ${counter * Number(cost.split(" ")[0])} $` : ""}</p>
 
         <div className={styles.counter}>
-          <img className={!counter && styles.deactive} src={down} onClick={this.downHandler} alt="down-key" />
+          <img className={!counter ? styles.deactive : ""} src={down} onClick={this.downHandler} alt="down-key" />
           <span>{counter}</span>
           <img src={up} onClick={this.upHandler} alt="up-key" />
         </div>
