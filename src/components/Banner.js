@@ -10,7 +10,7 @@ const Banner = () => {
             <div className={styles.textContainer}>
                <h1>M.Taheri</h1>
                <p>
-                   We're learning <span>React.js</span>
+                   I'm Working with <span>React.js</span>
                </p>
             </div>
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import styles from './Navbar.module.css'
-import logo from '../images/Logo.png'
+import logo from '../images/mtLogo.png'
 
 const Navbar = () => {
     return (
@@ -11,7 +11,6 @@ const Navbar = () => {
                <ul className={styles.list}>
                    <li><Link to="/">Home Page</Link></li>
                    <li><Link to="/products">Products</Link></li>
-                   <li><Link to="/">About Us</Link></li>
                </ul>
             </div>
             <div className={styles.logo}>
